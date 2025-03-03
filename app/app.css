@@ -1,15 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-heading: "Montserrat", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --color-primary-green: #365342;
+  --color-primary-pink: #ffe5d7;
+  --color-light-pink: #fff9f6;
+  --color-white: rgb(255, 253, 254, 1);
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-primary-pink text-primary-green;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+  margin:0;
+  padding:0;
 }
