@@ -1,12 +1,11 @@
-import Contact from "~/components/contact";
+import ContactSection from "~/components/contact";
+import HeroSection from "~/components/hero";
 
 export default function Welcome() {
   return (
     <main className="flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold text-center font-heading h-screen">
-        Hello
-      </h1>
-      <Contact />
+      <HeroSection />
+      <ContactSection />
     </main>
   );
 }
