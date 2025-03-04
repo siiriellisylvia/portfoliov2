@@ -1,5 +1,5 @@
 import Button from "./button";
-import CVFile from "../assets/siirilietu-cv.pdf";
+import CVFile from "../../public/assets/siirilietu-cv.pdf";
 
 export default function Nav() {
   return (
