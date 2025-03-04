@@ -21,7 +21,7 @@ export default function Stars() {
           size: Math.random() * 3 + 1, // Random size between 1px and 3px
           top: Math.random() * 100, // Random position (0 to 100vh)
           left: Math.random() * 100, // Random position (0 to 100vw)
-          animationDuration: Math.random() * 30 + 5,
+          animationDuration: Math.random() * 50 + 5,
           opacity: Math.random() * 0.5 + 0.5,
         });
       }
