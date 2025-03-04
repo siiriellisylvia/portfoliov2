@@ -1,26 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap');
 
 @import "tailwindcss";
+
 
 @theme {
   --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-heading: "Montserrat", ui-sans-serif, system-ui, sans-serif,
+  --font-heading: "Playfair Display", ui-serif, system-ui, serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-primary-green: #365342;
   --color-primary-pink: #ffe5d7;
   --color-light-pink: #fff9f6;
   --color-white: rgb(255, 253, 254, 1);
+  --spacing-page: 6rem;
 }
 
 html,
 body {
-  @apply bg-primary-pink text-primary-green;
+  @apply bg-primary-pink text-primary-green text-lg font-light;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
-  margin:0;
-  padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-black font-heading;
+}
+
+h1 {
+  @apply text-6xl
+}
+
+h2 {
+  @apply text-4xl
+}
+
+h3 {
+  @apply text-3xl
 }
