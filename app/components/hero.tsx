@@ -7,6 +7,7 @@ export default function HeroSection() {
     <main className="w-full relative z-3 flex flex-row h-screen">
       <section className="w-2/3 relative z-3 flex flex-col h-screen  bg-primary-green text-primary-pink">
         <div className="h-3/5 flex flex-col justify-end pb-5 px-[var(--spacing-page)] relative overflow-hidden">
+          <Stars />
           <h2>Nice to meet you!</h2>
           <h1>I'm Siiri,</h1>
         </div>

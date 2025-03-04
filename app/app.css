@@ -8,7 +8,7 @@
 @theme {
   --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-heading: "Playfair Display", ui-serif, system-ui, serif,
+  --font-heading: "Montserrat", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-primary-green: #365342;
   --color-primary-pink: #ffe5d7;
@@ -27,7 +27,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-black font-heading;
+  @apply font-black font-heading mb-2;
 }
 
 h1 {
@@ -40,4 +40,13 @@ h2 {
 
 h3 {
   @apply text-3xl
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh); /* Moves up faster */
+  }
 }
