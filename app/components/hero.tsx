@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import heroImage from "../assets/portfolio-nobg.webp";
+import heroImage from "../../public/assets/portfolio-nobg.webp";
 import Stars from "./stars";
 
 export default function HeroSection() {
