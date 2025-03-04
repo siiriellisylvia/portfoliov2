@@ -19,14 +19,15 @@
 
 html,
 body {
-  @apply bg-primary-pink text-primary-green text-lg font-light;
+  @apply bg-primary-pink text-primary-green text-lg font-light p-0 m-0;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   @apply font-black font-heading mb-2;
 }
 
@@ -42,6 +43,10 @@ h3 {
   @apply text-3xl
 }
 
+p {
+  @apply text-base font-light;
+}
+
 @keyframes animStar {
   from {
     transform: translateY(0);
@@ -50,3 +55,17 @@ h3 {
     transform: translateY(-100vh); /* Moves up faster */
   }
 }
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
