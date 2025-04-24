@@ -1,17 +1,24 @@
 import { useParams, Navigate } from "react-router-dom";
-import { Calendar, Hourglass, Swords, UserRound } from "lucide-react"; // Import your icons here
-import { projects } from "../data/projects"; // Import your mock data
+import { Calendar, Hourglass, Swords, UserRound } from "lucide-react"; 
+import Project, { type ProjectType } from "~/db/models/Project";
+// Import your icons here
 
-export default function ProjectDetail() {
-  const { id } = useParams();
-console.log(id);
-  // Find the project that matches the URL param
-  const project = projects.find((p) => p.id === id);
-
-  // Redirect if project not found
+export async function loader({ params }: { params: { slug: string } }) {
+  const { slug } = params;
+  const project = await Project.findOne({ slug }).lean();
   if (!project) {
-    return <Navigate to="/" replace />;
+    throw new Response("Not Found", { status: 404 });
   }
+
+  return Response.json({ project });
+}
+
+export default function ProjectDetail({
+  loaderData
+}: {
+  loaderData: { project: ProjectType }})
+{
+  const {project} = loaderData;
 
   return (
     <main className="w-full">
@@ -20,7 +27,7 @@ console.log(id);
           {project.title}
         </h1>
         <h2 className="text-xl text-primary-pink">{project.subtitle}</h2>
-        <img src={project.image} alt={project.title} className="mt-6 w-2/3" />
+        <img src={project.image || "/placeholder-image.jpg"} alt={project.title || "Project Image"} className="mt-6 w-2/3" />
         <div className="flex gap-6 mt-4">
           <div className="flex flex-row gap-2">
             <Calendar />

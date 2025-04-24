@@ -12,7 +12,7 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
         {projects.map((project) => (
           <Link
             key={project.title || `project-${project._id}`}
-            to={`/projects/${project.title}`}
+            to={`/projects/${project.slug}`}
             className=" p-4 bg-primary-green text-primary-pink rounded-lg"
           >
             {project.image && (
