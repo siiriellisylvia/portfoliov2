@@ -1,4 +1,5 @@
 import { useParams, Navigate } from "react-router-dom";
+import { Calendar, Hourglass, Swords, UserRound } from "lucide-react"; // Import your icons here
 import { projects } from "../data/projects"; // Import your mock data
 
 export default function ProjectDetail() {
@@ -21,10 +22,22 @@ console.log(id);
         <h2 className="text-xl text-primary-pink">{project.subtitle}</h2>
         <img src={project.image} alt={project.title} className="mt-6 w-2/3" />
         <div className="flex gap-6 mt-4">
-          <p>📅 {project.date}</p>
-          <p>⏳ {project.duration}</p>
-          <p>👤 {project.type}</p>
-          <p>🛠️ {project.tech}</p>
+          <div className="flex flex-row gap-2">
+            <Calendar />
+            <p>{project.date}</p>
+          </div>
+          <div className="flex flex-row gap-2">
+            <Hourglass />
+            <p>{project.duration}</p>
+          </div>
+          <div className="flex flex-row gap-2">
+            <UserRound />
+            <p> {project.type}</p>
+          </div>
+          <div className="flex flex-row gap-2">
+            <Swords />
+            <p>{project.tech}</p>
+          </div>
         </div>
       </section>
 
