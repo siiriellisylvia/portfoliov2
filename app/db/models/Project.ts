@@ -3,35 +3,38 @@ import { Schema, model, Types, type InferSchemaType } from "mongoose";
 // Define the schema for the Project collection in MongoDB
 const projectSchema = new Schema(
   {
+    slug: {
+      type: String,
+    },
     title: {
-      type: String
+      type: String,
     },
     subtitle: {
-      type: String
+      type: String,
     },
     date: {
-      type: String
+      type: String,
     },
     duration: {
-      type: String
+      type: String,
     },
     type: {
-      type: String
+      type: String,
     },
     tech: {
-      type: String
+      type: String,
     },
     description: {
-      type: String
+      type: String,
     },
     image: {
-      type: String
+      type: String,
     },
     liveLink: {
-      type: String
+      type: String,
     },
   },
-  { timestamps: true }, // Automatically add `createdAt` and `updatedAt`
+  { timestamps: true } // Automatically add `createdAt` and `updatedAt`
 );
 
 export type ProjectType = InferSchemaType<typeof projectSchema> & {
