@@ -47,13 +47,22 @@ export default function ProjectDetail({
           </div>
         </div>
         
-        <video className="w-full md:w-4/5 h-1/2 md:h-full " autoPlay loop muted>
-          <source
-            src={project.video || "/placeholder-video.mp4"}
-            type="video/mp4"
+        {project.video ? (
+          <video className="w-full md:w-4/5 h-1/2 md:h-full" autoPlay loop muted>
+            <source src={project.video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        ) : project.image ? (
+          <img 
+            src={project.image} 
+            alt={project.title || "Project image"} 
+            className="w-full md:w-4/5 h-1/2 md:h-full object-contain rounded-lg"
           />
-          Your browser does not support the video tag.
-        </video>
+        ) : (
+          <div className="w-full md:w-4/5 h-1/2 md:h-full bg-gray-200 flex items-center justify-center rounded-lg">
+            <p className="text-gray-500">No media available</p>
+          </div>
+        )}
       </section>
 
       <section className="py-10 px-4 md:px-40 bg-light-pink h-1/3">
