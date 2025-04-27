@@ -7,8 +7,8 @@ interface ProjectsListProps {
 
 export default function ProjectsList({ projects }: ProjectsListProps) {
   return (
-    <section className="lg:w-full px-[var(--spacing-page)] py-10 sm:px-0">
-      <div className="flex flex-row gap-6">
+    <section className="md:w-full px-[var(--spacing-page-mobile)] md:px-[var--spacing-page] py-10">
+      <div className="flex flex-col md:flex-row gap-6">
         {projects.map((project) => (
           <Link
             key={project.title || `project-${project._id}`}
@@ -22,7 +22,7 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
                 className="rounded-lg mb-3"
               />
             )}
-            <h3 className="text-xl font-bold">{project.title || "Untitled Project"}</h3>
+            <h3>{project.title || "Untitled Project"}</h3>
             {project.description && <p>{project.description}</p>}
           </Link>
         ))}

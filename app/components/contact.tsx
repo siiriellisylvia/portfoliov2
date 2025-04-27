@@ -5,7 +5,7 @@ export default function ContactSection() {
     <>
       <section
         id="contact"
-        className="w-full relative z-3 flex flex-col items-center text-center h-screen p-[var(--spacing-page)] bg-light-pink"
+        className="w-full relative z-3 flex flex-col justify-center items-center text-center h-screen px-[var(--spacing-page-mobile)] md:[var(--spacing-page)] bg-light-pink"
       >
         <div>
           <h2 className="mt-0 text-4xl font-extrabold font-heading">

@@ -7,9 +7,9 @@ interface ProjectsSectionProps {
 
 export default function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
-    <section className="w-full relative z-6 flex flex-col h-screen px-[var(--spacing-page)]">
+    <section className="w-full relative z-6 flex flex-col md:h-screen px-[var(--spacing-page-mobile)] md:px-[var(--spacing-page)] bg-light-pink">
       <div className="pt-10">
-        <h2 className="mt-0 text-4xl font-extrabold font-heading">
+        <h2>
           Projects
         </h2>
         <ProjectsList projects={projects} />

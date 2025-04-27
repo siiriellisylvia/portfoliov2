@@ -2,7 +2,7 @@ import IconContainer from "./iconContainer";
 
 export default function AboutSection() {
   return (
-    <section className="w-full relative z-3 flex flex-col h-screen px-[var(--spacing-page)] bg-primary-green text-white">
+    <section className="w-full relative z-3 flex flex-col md:h-screen px-[var(--spacing-page-mobile)] md:[var(--spacing-page)] bg-primary-green text-white">
       <div className="pt-20">
         <h2 className="mt-0 pb-5 text-4xl font-extrabold font-heading text-primary-pink mb-10">About me</h2>
         <div>

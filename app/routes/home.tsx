@@ -31,16 +31,16 @@ export default function Home({
 
   return (
     <div className="h-screen overflow-y-auto snap-y snap-normal scroll-smooth">
-      <section className="h-screen snap-start ">
+      <section className="md:h-screen md:snap-start ">
         <HeroSection />
       </section>
-      <section className="h-screen snap-start">
+      <section className="md:h-screen md:snap-start">
         <AboutSection />
       </section>
-      <section className="h-screen snap-start">
+      <section className="md:h-screen md:snap-start">
         <ProjectsSection projects={projects} />
       </section>
-      <section className="h-screen snap-start">
+      <section className="md:h-screen md:snap-start">
         <ContactSection />
       </section>
     </div>
