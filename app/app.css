@@ -11,6 +11,7 @@
   --font-heading: "Montserrat", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-primary-green: #365342;
+  --color-green-dark: #203128;
   --color-primary-pink: #ffe5d7;
   --color-light-pink: #fff9f6;
   --color-white: rgb(255, 253, 254, 1);
@@ -40,7 +41,7 @@ h2 {
 }
 
 h3 {
-  @apply text-3xl
+  @apply text-2xl
 }
 
 p {
