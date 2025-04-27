@@ -30,6 +30,9 @@ const projectSchema = new Schema(
     image: {
       type: String,
     },
+    video: {
+      type: String,
+    },
     liveLink: {
       type: String,
     },
