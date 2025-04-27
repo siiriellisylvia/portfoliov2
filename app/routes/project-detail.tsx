@@ -46,7 +46,8 @@ export default function ProjectDetail({
             </div>
           </div>
         </div>
-        <video className="w-full md:w-4/5" autoPlay loop muted>
+        
+        <video className="w-full md:w-4/5 h-1/2 md:h-full " autoPlay loop muted>
           <source
             src={project.video || "/placeholder-video.mp4"}
             type="video/mp4"
