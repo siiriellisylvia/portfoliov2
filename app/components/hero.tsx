@@ -1,10 +1,11 @@
 import heroImage from "../../public/assets/portrait.png";
 import Stars from "./stars";
+import IconContainer from "./iconContainer";
 
 export default function HeroSection() {
   return (
     <main className="w-full relative h-screen top-0">
-      <div className="absolute bottom-[40%] md:bottom-0 right-[1rem] md:right-[5rem] h-[19rem] md:h-[48rem] md:w-1/3 z-5">
+      <div className="absolute bottom-[50%] md:bottom-0 right-[1rem] md:right-[5rem] h-[19rem] md:h-[48rem] md:w-1/3 z-5">
         <img
           src={heroImage}
           alt="Siiri Lietu"
@@ -12,7 +13,7 @@ export default function HeroSection() {
         />
       </div>
       <section className="relative z-3 flex flex-col h-screen">
-        <div className="h-3/5 md:h-3/5 flex flex-row justify-between relative overflow-hidden bg-primary-green text-primary-pink">
+        <div className="h-1/2 md:h-3/5 flex flex-row justify-between relative overflow-hidden bg-primary-green text-primary-pink">
           <Stars />
           <div className="py-20 flex flex-col mt-auto pl-[var(--spacing-page-mobile)] md:pl-[var(--spacing-page)]">
             <h2>Nice to meet you!</h2>
@@ -27,6 +28,8 @@ export default function HeroSection() {
             2025.
           </p>
           <p className="mt-6">This portfolio is made with React Router v7, TypeScript, Tailwind CSS and MongoDB. It's a constant work in progress, as it should be!</p>
+          
+          <IconContainer />
         </div>
       </section>
     </main>

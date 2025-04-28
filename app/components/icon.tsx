@@ -38,7 +38,7 @@ function formatIconName(name: IconName): string {
     .join(" ");
 }
 
-const baseClass = "w-15 h-15 fill-primary-pink bg-primary-green p-2 rounded"; // Default styles
+const baseClass = "h-13 w-13 md:w-15 md:h-15 fill-primary-green bg-primary-pink p-2 rounded"; // Default styles
 
 const icons = {
   CSS: (

@@ -42,7 +42,6 @@ export default function AboutSection() {
           </p>
         </div>
       </div>
-      <IconContainer />
     </section>
   );
 }
