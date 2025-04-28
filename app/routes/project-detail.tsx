@@ -72,9 +72,9 @@ export default function ProjectDetail({
             href={project.liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-block bg-primary-green text-white px-4 py-2 rounded-lg"
+            className="mt-4 inline-block bg-primary-green text-white font-bold px-4 py-2 rounded-full hover:bg-green-dark transition duration-300"
           >
-            Live Site
+            See it in action
           </a>
         )}
       </section>

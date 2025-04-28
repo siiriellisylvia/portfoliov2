@@ -9,7 +9,7 @@ export default function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
     <section className="w-full relative z-6 flex flex-col min-h-screen px-[var(--spacing-page-mobile)] md:px-[var(--spacing-page)] bg-light-pink">
       <div className="py-10">
-        <h2>Projects</h2>
+        <h2>My most recent work</h2>
         <ProjectsList projects={projects} />
       </div>
     </section>

@@ -1,10 +1,10 @@
-import heroImage from "../../public/assets/portfolio-nobg.webp";
+import heroImage from "../../public/assets/portrait.png";
 import Stars from "./stars";
 
 export default function HeroSection() {
   return (
     <main className="w-full relative h-screen top-0">
-      <div className="absolute bottom-[40%] md:bottom-0 right-[1rem] md:right-[5rem] h-[18rem] md:h-[45rem] md:w-1/3 z-5">
+      <div className="absolute bottom-[40%] md:bottom-0 right-[1rem] md:right-[5rem] h-[19rem] md:h-[48rem] md:w-1/3 z-5">
         <img
           src={heroImage}
           alt="Siiri Lietu"
@@ -26,6 +26,7 @@ export default function HeroSection() {
             I'm a web development student looking for an internship for fall
             2025.
           </p>
+          <p className="mt-6">This portfolio is made with React Router v7, TypeScript, Tailwind CSS and MongoDB. It's a constant work in progress, as it should be!</p>
         </div>
       </section>
     </main>
