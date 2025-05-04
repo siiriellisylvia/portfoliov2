@@ -2,9 +2,9 @@ import IconContainer from "./iconContainer";
 
 export default function AboutSection() {
   return (
-    <section className="w-full relative z-3 flex flex-col justify-center md:h-screen px-[var(--spacing-page-mobile)] md:px-[var(--spacing-page)] bg-primary-green text-white">
+    <section className="w-full relative z-3 flex flex-col justify-center py-6 md:h-screen px-[var(--spacing-page-mobile)] md:px-[var(--spacing-page)] bg-primary-green text-white">
       <div>
-        <h2 className="mt-0 pb-5 text-4xl font-extrabold font-heading text-primary-pink mb-10">
+        <h2 className="mt-0 pb-5 text-primary-pink mb-10">
           About me
         </h2>
 
@@ -26,9 +26,10 @@ export default function AboutSection() {
             </h4>
             <p>
               I'm 34, and would call myself a lifetime learner. I have a degree
-              in clothing design and business, and I enjoy developing new skills 
-              and trying new things in general. I have also tried figure skating, boxing and wakeboarding
-              among other things - with very mixed results.
+              in clothing design and business, and I enjoy developing new skills
+              and trying new things in general. I have also tried figure
+              skating, boxing and wakeboarding among other things - with very
+              mixed results.
             </p>
           </div>
 
@@ -37,10 +38,10 @@ export default function AboutSection() {
               Back to a childhood hobby
             </h4>
             <p>
-              After studying and working in many fields, I found my childhood hobby again
-              in frontend development. I was scribbling HTML and CSS in a
-              notebook when I was around ten years old, and making websites in
-              Geocities. I wish I had those pages to add to my portfolio!
+              After studying and working in many fields, I found my childhood
+              hobby again in frontend development. I was scribbling HTML and CSS
+              in a notebook when I was around ten years old, and making websites
+              in Geocities. I wish I had those pages to add to my portfolio!
             </p>
           </div>
 
