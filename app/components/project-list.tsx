@@ -42,7 +42,7 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
                   onClick={(e) => e.stopPropagation()}
                   className="bg-primary-green hover:bg-green-dark text-primary-pink font-medium py-2 px-4 rounded-lg transition-colors duration-300"
                 >
-                  View Live
+                  See live solution
                 </a>
               </div>
             )}

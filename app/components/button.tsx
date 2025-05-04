@@ -11,7 +11,7 @@ export default function Button({ label, link }: ButtonProps) {
     <a
       href={link}
       download
-      className="bg-primary-pink text-primary-green text-sm font-bold py-1 px-5 rounded-3xl cursor-pointer"
+      className="bg-primary-pink text-primary-green text-sm font-bold py-1 px-5 rounded-full cursor-pointer"
     >
       {label}
     </a>
@@ -22,7 +22,7 @@ export default function Button({ label, link }: ButtonProps) {
         e.preventDefault();
         document.querySelector(link)?.scrollIntoView({ behavior: "smooth" });
       }}
-      className="bg-primary-pink text-primary-green text-sm font-bold py-1 px-5 rounded-3xl cursor-pointer"
+      className="bg-primary-pink text-primary-green text-sm font-bold py-1 px-5 rounded-full cursor-pointer"
     >
       {label}
     </button>

@@ -3,7 +3,7 @@ import Icon from "./icon";
 export default function IconContainer({ className = "" }: { className?: string }) {
   return (
     <div className={`relative overflow-hidden ${className}`}>
-      <p className="mb-4">I know a thing or two about all of these:</p>
+      <p className="mb-4 font-bold!">I know a thing or two about all of these:</p>
       <div className="icon-carousel flex w-max animate-scroll gap-6">
         <Icon name="CSS" />
         <Icon name="javaScript" />
