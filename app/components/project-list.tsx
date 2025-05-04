@@ -1,5 +1,6 @@
 import { type ProjectType } from "~/db/models/Project";
 import { Link } from "react-router";
+import Button from "./button";
 
 interface ProjectsListProps {
   projects: ProjectType[];
@@ -9,7 +10,7 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
   return (
     <div className="w-full">
       <div className="flex flex-col gap-6">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <Link
             key={project.slug || `project-${project._id}`}
             to={`/projects/${project.slug}`}
@@ -34,16 +35,13 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
             </div>
             
             {project.liveLink && (
-              <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="bg-primary-green hover:bg-green-dark text-primary-pink font-medium py-2 px-4 rounded-lg transition-colors duration-300"
-                >
-                  See live solution
-                </a>
+              <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" onClick={(e) => e.stopPropagation()}>
+                <Button
+                  label="See live solution"
+                  link={project.liveLink}
+                  isExternal={true}
+                  className="bg-primary-green text-primary-pink"
+                />
               </div>
             )}
           </Link>

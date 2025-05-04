@@ -1,5 +1,6 @@
 import { Calendar, Hourglass, Swords, UserRound } from "lucide-react";
 import Project, { type ProjectType } from "~/db/models/Project";
+import Button from "~/components/button";
 // Import your icons here
 
 export async function loader({ params }: { params: { slug: string } }) {
@@ -68,14 +69,14 @@ export default function ProjectDetail({
       <section className="py-10 px-4 md:px-40 bg-light-pink h-1/3">
         <p className="mt-4 text-lg text-primary-green">{project.description}</p>
         {project.liveLink && (
-          <a
-            href={project.liveLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-block bg-primary-green text-white font-bold px-4 py-2 rounded-full hover:bg-green-dark transition duration-300"
-          >
-            See it in action
-          </a>
+          <div className="mt-6">
+            <Button
+              label="See it in action"
+              link={project.liveLink}
+              isExternal={true}
+              className="bg-primary-green text-primary-pink"
+            />
+          </div>
         )}
       </section>
     </main>
