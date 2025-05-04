@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <main className="w-full relative h-screen top-0">
       {/* Portrait image - increased z-index to be above the carousel */}
-      <div className="absolute bottom-[50%] md:bottom-0 right-[var(--spacing-page-mobile)] md:right-[5rem] h-[16rem] md:h-[44rem] md:w-1/3 z-10">
+      <div className="absolute bottom-[50%] md:bottom-0 right-0 md:right-[5rem] h-[16rem] md:h-[44rem] md:w-1/3 z-10">
         <img
           src={heroImage}
           alt="Siiri Lietu"
