@@ -10,7 +10,7 @@ export default function IconContainer({
       <p className="mb-4 font-bold!">
         I know a thing or two about all of these:
       </p>
-      <div className="icon-carousel flex w-max animate-scroll gap-6">
+      <div className="icon-carousel animate-scroll flex w-max gap-6">
         <Icon name="CSS" />
         <Icon name="javaScript" />
         <Icon name="react" />

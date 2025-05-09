@@ -1,12 +1,12 @@
 export default function AboutSection() {
   return (
-    <section className="w-full relative z-3 flex flex-col justify-center py-6 md:min-h-screen px-[var(--spacing-page-mobile)] md:px-[var(--spacing-page)] bg-primary-green text-white">
+    <section className="bg-primary-green relative z-3 flex w-full flex-col justify-center px-[var(--spacing-page-mobile)] py-6 text-white md:min-h-screen md:px-[var(--spacing-page)]">
       <div>
-        <h2 className="mt-0 pb-5 text-primary-pink mb-10">About me</h2>
+        <h2 className="text-primary-pink mt-0 mb-10 pb-5">About me</h2>
 
         <div className="space-y-6">
           <div>
-            <h4 className="mb-2 text-primary-pink">From Europe to Aarhus</h4>
+            <h4 className="text-primary-pink mb-2">From Europe to Aarhus</h4>
             <p>
               After spending the last ten years living and working in three
               different countries around Europe, I’ve now found my home in
@@ -17,7 +17,7 @@ export default function AboutSection() {
           </div>
 
           <div>
-            <h4 className="mb-2 text-primary-pink">
+            <h4 className="text-primary-pink mb-2">
               Genuinely enjoy learning and problem solving
             </h4>
             <p>
@@ -30,7 +30,7 @@ export default function AboutSection() {
           </div>
 
           <div>
-            <h4 className="mb-4 text-primary-pink">
+            <h4 className="text-primary-pink mb-4">
               Back to a childhood hobby
             </h4>
             <p>
@@ -42,7 +42,7 @@ export default function AboutSection() {
           </div>
 
           <div>
-            <h4 className="mb-4 text-primary-pink">
+            <h4 className="text-primary-pink mb-4">
               Creativity, teamwork - and kittens
             </h4>
             <p className="text-light-pink text-sm font-normal">
@@ -56,7 +56,7 @@ export default function AboutSection() {
           </div>
 
           <div>
-            <h4 className="mb-4 text-primary-pink">Bad jokes and dad jokes</h4>
+            <h4 className="text-primary-pink mb-4">Bad jokes and dad jokes</h4>
             <p>
               Dad jokes and bad jokes in general are close to my heart, and I
               think I must have heard all the Apple “Hey Siri” jokes known to

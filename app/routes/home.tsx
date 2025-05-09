@@ -30,14 +30,14 @@ export default function Home({
   const { projects } = loaderData;
 
   return (
-    <div className="overflow-y-auto snap-y snap-normal scroll-smooth">
+    <div className="snap-y snap-normal overflow-y-auto scroll-smooth">
       <section className="md:min-h-screen md:snap-start">
         <HeroSection />
       </section>
       <section className="md:min-h-screen md:snap-start">
         <AboutSection />
       </section>
-      <section className="min-h-screen md:snap-start overflow-visible">
+      <section className="min-h-screen overflow-visible md:snap-start">
         <ProjectsSection projects={projects} />
       </section>
       <section className="md:h-screen md:snap-start">

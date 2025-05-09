@@ -4,26 +4,26 @@ import IconContainer from "./iconContainer";
 
 export default function HeroSection() {
   return (
-    <main className="w-full relative min-h-screen top-0">
+    <main className="relative top-0 min-h-screen w-full">
       {/* Portrait image - adjusted for bottom alignment and size */}
-      <div className="absolute bottom-0 right-0 md:right-[2rem] lg:right-[5rem] h-[50vh] md:h-[70vh] lg:h-[80vh] z-10">
+      <div className="absolute right-0 bottom-0 z-10 h-[50vh] md:right-[2rem] md:h-[70vh] lg:right-[5rem] lg:h-[80vh]">
         <img
           src={heroImage}
           alt="Siiri Lietu"
-          className="w-full h-full object-cover object-top"
+          className="h-full w-full object-cover object-top"
         />
       </div>
 
-      <section className="relative z-3 flex flex-col min-h-screen">
-        <div className="grow shrink min-h-[40vh] md:min-h-[50vh] flex flex-row justify-between relative bg-primary-green text-primary-pink">
+      <section className="relative z-3 flex min-h-screen flex-col">
+        <div className="bg-primary-green text-primary-pink relative flex min-h-[40vh] shrink grow flex-row justify-between md:min-h-[50vh]">
           <Stars />
-          <div className="py-20 flex flex-col mt-auto pl-[var(--spacing-page-mobile)] md:pl-[var(--spacing-page)]">
+          <div className="mt-auto flex flex-col py-20 pl-[var(--spacing-page-mobile)] md:pl-[var(--spacing-page)]">
             <h2>Hi, nice to see you here!</h2>
             <h1>I'm Siiri,</h1>
           </div>
         </div>
 
-        <div className="shrink-0 h-auto md:w-2/3 py-5 z-6 bg-primary-pink text-primary-green px-[var(--spacing-page-mobile)] md:px-[var(--spacing-page)]">
+        <div className="bg-primary-pink text-primary-green z-6 h-auto shrink-0 px-[var(--spacing-page-mobile)] py-5 md:w-2/3 md:px-[var(--spacing-page)]">
           <h2>a frontend developer.</h2>
           <p>
             I'm a web development student looking for an internship for fall

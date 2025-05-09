@@ -14,19 +14,19 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
           <Link
             key={project.slug || `project-${project._id}`}
             to={`/projects/${project.slug}`}
-            className="p-4 bg-primary-pink text-primary-green hover:text-green-dark rounded-lg flex flex-col md:flex-row gap-10 w-full transition-all duration-300 group relative"
+            className="bg-primary-pink text-primary-green hover:text-green-dark group relative flex w-full flex-col gap-10 rounded-lg p-4 transition-all duration-300 md:flex-row"
           >
             {project.image && (
-              <div className="w-full md:w-1/3 overflow-hidden rounded-lg">
+              <div className="w-full overflow-hidden rounded-lg md:w-1/3">
                 <img
                   src={project.image}
                   alt={project.title || "Project image"}
-                  className="rounded-lg w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="h-auto w-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
             )}
-            <div className="flex flex-col justify-center w-full md:w-2/3 md:pr-10">
-              <h3 className="text-xl font-bold mb-2">
+            <div className="flex w-full flex-col justify-center md:w-2/3 md:pr-10">
+              <h3 className="mb-2 text-xl font-bold">
                 {project.title || "Untitled Project"}
               </h3>
               {project.description && (
@@ -36,7 +36,7 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
 
             {project.liveLink && (
               <div
-                className="hidden md:block absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                className="absolute right-4 bottom-4 hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:block"
                 onClick={(e) => e.stopPropagation()}
               >
                 <Button

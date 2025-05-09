@@ -214,7 +214,7 @@ export default function Icon({
   return (
     <div className="flex flex-col items-center">
       {iconWithClass}
-      {!hideLabel && <p className="text-xs mt-1">{formatIconName(name)}</p>}
+      {!hideLabel && <p className="mt-1 text-xs">{formatIconName(name)}</p>}
     </div>
   );
 }

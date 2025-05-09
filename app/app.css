@@ -22,7 +22,7 @@
 
 html,
 body {
-  @apply bg-primary-pink text-primary-green text-lg font-light p-0 m-0;
+  @apply bg-primary-pink text-primary-green m-0 p-0 text-lg font-light;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-black font-heading mb-2;
+  @apply font-heading mb-2 font-black;
 }
 
 h1 {
@@ -55,7 +55,7 @@ h4 {
 }
 
 p {
-  @apply text-sm md:text-base font-light;
+  @apply text-sm font-light md:text-base;
 }
 
 @keyframes animStar {

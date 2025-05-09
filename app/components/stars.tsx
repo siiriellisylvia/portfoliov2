@@ -32,11 +32,11 @@ export default function Stars() {
   }, []);
 
   return (
-    <div className="absolute w-full h-full overflow-hidden pointer-events-none">
+    <div className="pointer-events-none absolute h-full w-full overflow-hidden">
       {stars.map((star) => (
         <div
           key={star.id}
-          className="absolute bg-primary-pink rounded-full"
+          className="bg-primary-pink absolute rounded-full"
           style={{
             width: `${star.size}px`,
             height: `${star.size}px`,
