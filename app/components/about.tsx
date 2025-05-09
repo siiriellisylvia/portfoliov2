@@ -1,5 +1,3 @@
-import IconContainer from "./iconContainer";
-
 export default function AboutSection() {
   return (
     <section className="w-full relative z-3 flex flex-col justify-center py-6 md:min-h-screen px-[var(--spacing-page-mobile)] md:px-[var(--spacing-page)] bg-primary-green text-white">

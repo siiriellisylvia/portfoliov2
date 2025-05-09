@@ -22,11 +22,9 @@ export default function ProjectDetail({
 
   return (
     <main className="w-full md:min-h-screen">
-      <section className="h-2/3 flex flex-col md:flex-row items-center px-4 md:px-40 pt-20 pb-5">
+      <section className="h-auto flex flex-col md:flex-row items-center px-4 md:px-40 pt-20 pb-5">
         <div className="flex flex-col gap-4">
-          <h2>
-            {project.title}
-          </h2>
+          <h2>{project.title}</h2>
           <h3 className="text-green-dark">{project.subtitle}</h3>
           <div className="flex flex-col gap-6 mt-4">
             <div className="flex flex-row gap-2">
@@ -47,16 +45,21 @@ export default function ProjectDetail({
             </div>
           </div>
         </div>
-        
+
         {project.video ? (
-          <video className="w-full md:w-4/5 h-1/2 md:h-full" autoPlay loop muted>
+          <video
+            className="w-2/3 md:w-1/2 h-1/2 md:h-[50vh]"
+            autoPlay
+            loop
+            muted
+          >
             <source src={project.video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         ) : project.image ? (
-          <img 
-            src={project.image} 
-            alt={project.title || "Project image"} 
+          <img
+            src={project.image}
+            alt={project.title || "Project image"}
             className="w-full md:w-4/5 h-1/2 md:h-full object-contain rounded-lg"
           />
         ) : (
@@ -71,7 +74,9 @@ export default function ProjectDetail({
         <h3 className="text-primary-green mt-6">Overview</h3>
         <p className="mt-4 text-lg text-primary-green">{project.overview}</p>
         <h3 className="text-primary-green mt-6">Improvements</h3>
-        <p className="mt-4 text-lg text-primary-green">{project.improvements}</p>
+        <p className="mt-4 text-lg text-primary-green">
+          {project.improvements}
+        </p>
         {project.liveLink && (
           <div className="mt-6">
             <Button

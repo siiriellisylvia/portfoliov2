@@ -33,9 +33,12 @@ export default function ProjectsList({ projects }: ProjectsListProps) {
                 <p className="text-sm">{project.description}</p>
               )}
             </div>
-            
+
             {project.liveLink && (
-              <div className="hidden md:block absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" onClick={(e) => e.stopPropagation()}>
+              <div
+                className="hidden md:block absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                onClick={(e) => e.stopPropagation()}
+              >
                 <Button
                   label="See live solution"
                   link={project.liveLink}

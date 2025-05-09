@@ -1,5 +1,3 @@
-
-
 export const projects = [
   {
     id: "takeawalk",

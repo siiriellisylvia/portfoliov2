@@ -41,7 +41,8 @@ function formatIconName(name: IconName): string {
     .join(" ");
 }
 
-const baseClass = "h-13 w-13 md:w-15 md:h-15 fill-primary-green bg-primary-pink p-2 rounded"; // Default styles
+const baseClass =
+  "h-13 w-13 md:w-15 md:h-15 fill-primary-green bg-primary-pink p-2 rounded"; // Default styles
 
 // Function to merge className with baseClass, allowing overrides
 function mergeClasses(baseClass: string, className: string = ""): string {
@@ -195,17 +196,21 @@ const icons = {
   ),
 };
 
-export default function Icon({ name, className = "", hideLabel = false }: IconProps) {
+export default function Icon({
+  name,
+  className = "",
+  hideLabel = false,
+}: IconProps) {
   const iconComponent = icons[name as keyof typeof icons];
-  
+
   // If there's no icon found, return null
   if (!iconComponent) return null;
-  
+
   // Clone the icon element with the merged class
   const iconWithClass = React.cloneElement(iconComponent, {
-    className: mergeClasses(baseClass, className)
+    className: mergeClasses(baseClass, className),
   });
-  
+
   return (
     <div className="flex flex-col items-center">
       {iconWithClass}

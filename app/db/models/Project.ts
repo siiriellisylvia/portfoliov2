@@ -47,9 +47,8 @@ const projectSchema = new Schema(
     liveLink: {
       type: String,
     },
-
   },
-  { timestamps: true } // Automatically add `createdAt` and `updatedAt`
+  { timestamps: true }, // Automatically add `createdAt` and `updatedAt`
 );
 
 export type ProjectType = InferSchemaType<typeof projectSchema> & {
