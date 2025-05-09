@@ -27,6 +27,17 @@ const projectSchema = new Schema(
     description: {
       type: String,
     },
+    overview: {
+      type: String,
+    },
+    features: [
+      {
+        type: String,
+      },
+    ],
+    improvements: {
+      type: String,
+    },
     image: {
       type: String,
     },
@@ -36,6 +47,7 @@ const projectSchema = new Schema(
     liveLink: {
       type: String,
     },
+
   },
   { timestamps: true } // Automatically add `createdAt` and `updatedAt`
 );
