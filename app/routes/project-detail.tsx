@@ -21,7 +21,7 @@ export default function ProjectDetail({
   const { project } = loaderData;
 
   return (
-    <main className="w-full md:h-screen">
+    <main className="w-full md:min-h-screen">
       <section className="h-2/3 flex flex-col md:flex-row items-center px-4 md:px-40 pt-20 pb-5">
         <div className="flex flex-col gap-4">
           <h2>
@@ -68,6 +68,10 @@ export default function ProjectDetail({
 
       <section className="py-10 px-4 md:px-40 bg-light-pink h-1/3">
         <p className="mt-4 text-lg text-primary-green">{project.description}</p>
+        <h3 className="text-primary-green mt-6">Overview</h3>
+        <p className="mt-4 text-lg text-primary-green">{project.overview}</p>
+        <h3 className="text-primary-green mt-6">Improvements</h3>
+        <p className="mt-4 text-lg text-primary-green">{project.improvements}</p>
         {project.liveLink && (
           <div className="mt-6">
             <Button
