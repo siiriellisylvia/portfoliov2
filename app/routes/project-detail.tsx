@@ -46,7 +46,7 @@ export default function ProjectDetail({
           </div>
         </div>
 
-        {project.video ? (
+        {/* {project.video ? (
           <video
             className="h-1/2 w-2/3 md:h-[50vh] md:w-1/2"
             autoPlay
@@ -66,7 +66,7 @@ export default function ProjectDetail({
           <div className="flex h-1/2 w-full items-center justify-center rounded-lg bg-gray-200 md:h-full md:w-4/5">
             <p className="text-gray-500">No media available</p>
           </div>
-        )}
+        )} */}
       </section>
 
       <section className="bg-light-pink h-1/3 px-4 py-10 md:px-40">
